@@ -13,6 +13,12 @@
     <Color x:Key="SecondaryDarkText">#9880e5</Color>
     <Color x:Key="Tertiary">#2B0B98</Color>
 
+    <!--Para o projeto atual-->
+    <Color x:Key="Cinza">#E5E7EB</Color>
+    <Color x:Key="Verde">#10B981</Color>
+    <Color x:Key="Branco">#FFFFFF</Color>
+    <Color x:Key="Preto">#1F2937</Color>
+
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>
     <Color x:Key="Magenta">#D600AA</Color>
