@@ -22,6 +22,17 @@ public partial class EditarProduto : ContentPage
                 Preco = Convert.ToDouble(txt_preco.Text)
             };
 
+            if (p.Quantidade <= 0)
+            {
+                await DisplayAlert("Ops", "Quantidade deve ser maior que zero", "OK");
+                return;
+            }
+            else if (p.Preco <= 0)
+            {
+                await DisplayAlert("Ops", "Preço deve ser maior que zero", "OK");
+                return;
+            }
+
             await App.Db.Update(p);
             await DisplayAlert("Sucesso!", "Produto atualizado", "OK");
 

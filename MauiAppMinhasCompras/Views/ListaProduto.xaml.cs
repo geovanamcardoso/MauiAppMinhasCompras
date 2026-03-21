@@ -17,6 +17,7 @@ public partial class ListaProduto : ContentPage
     {
         try
         {
+            lista.Clear(); // Limpa a lista para evitar duplicidade de dados
             List<Produto> tmp = await App.Db.GetAll(); // Busca os dados do banco de dados
             tmp.ForEach(i => lista.Add(i)); // Adiciona os dados na lista que é a fonte de dados do ListView
         }
